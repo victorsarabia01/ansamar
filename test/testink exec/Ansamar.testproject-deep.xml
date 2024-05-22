@@ -1,0 +1,2581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="10" name="Consultorios" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>Modulo de consultorios</p>
+]]></details> 
+
+<testcase internalid="30" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar registros de datos de los consultorios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos del consultorio en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los consultorios</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="32" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver registros de los consultorios&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Consultario&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los consultorios</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los consultorios</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="34" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar registro de los consultorios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos del consultorio seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del consultorio, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="36" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar registro de los consultorios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de consultorios</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="11" name="Tipos de empleados" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>Registro de los tipos de empleados</p>
+]]></details> 
+
+<testcase internalid="38" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar registros de los tipos de los empleados</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos de los tipos de empleados en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los consultorios</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver registros de los tipos de empleados</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Tip&oacute; de Empleado&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los tipos de empleados</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los tipos de empleados</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="42" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar registros de los tipos de empleados</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos del tip&oacute; de empleado seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del tipo de empleado, actualiza la informaci&oacute;n necesaria&nbsp;y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar registros de los tipos de empleados</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de los tipos de empleados</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="12" name="Empleados" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>Registros de los empleados</p>
+]]></details> 
+
+<testcase internalid="46" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar registros de los empleados</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos del empleado en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los empleados</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver los registros de los empleados</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Empleados&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los empleados</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los empleados</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="50" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar a los registros de los empleados</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos de los empleados seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del empleado, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="52" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar registros de los empleados</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de empleados</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="13" name="Servicio Dental" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[<p>Registro de los Servicios de tratamientos dentales</p>
+]]></details> 
+
+<testcase internalid="54" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar registros de los servicios dentales</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos del servicio dental en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los consultorios</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="56" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver registros de los servicios dentales</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Servicio Dental&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los servicios dentales</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los servicios dentales</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="58" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar los registros de los servicios dentales</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos del servicio dental seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del servicio dental, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="60" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar los registros de los servicios dentales</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de los servicios dentales</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="14" name="Planificación" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[<p>Control de planificacion de empleados a los consultorios</p>
+]]></details> 
+
+<testcase internalid="62" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar registros de la planificaci&oacute;n de los consultorios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos de la planificaci&oacute;n en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de las planificaciones</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="64" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de la planificaci&oacute;n de los consultorios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Planificaci&oacute;n&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de las planificaciones</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan las planificaciones</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="66" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de la planificaci&oacute;n de los consultorios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos de la planificacion seleccionada y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n de la planificaci&oacute;n, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="68" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de la planificaci&oacute;n de los consultorios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de las planificaciones</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="15" name="Insumos" >
+<node_order><![CDATA[6]]></node_order>
+<details><![CDATA[<p>Control de insumos utilizados en los consultorios&nbsp;</p>
+]]></details> 
+
+<testcase internalid="70" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;registros de los insumos</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos del insumo&nbsp;en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los insumos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="72" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de los insumos</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Insumos&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los insumos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los insumos</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="74" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de los insumos</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos del insumo seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del insumo, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="76" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[24]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de los insumos</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de insumos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="16" name="Proveedor" >
+<node_order><![CDATA[7]]></node_order>
+<details><![CDATA[<p>Registro de los Proveedores de insumos</p>
+]]></details> 
+
+<testcase internalid="78" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;registros de los proveedores de insumos</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos del proveedor en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los proveedores</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="80" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[26]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de los proveedores de insumos</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Proveedores&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los proveedores</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los proveedores</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="82" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[27]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de los proveedores de insumos</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos del proveedor seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del proveedor, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="84" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de los proveedores de insumos</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de proveedores</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p><br />
+Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="17" name="Cita" >
+<node_order><![CDATA[8]]></node_order>
+<details><![CDATA[<p>Control de citas de los pacientes</p>
+]]></details> 
+
+<testcase internalid="86" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[29]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;registros de las citas de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos de la cita del paciente en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de citas</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="88" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de las citas de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Citas&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de las citas de los pacientes</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan las citas de los pacientes</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="90" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[31]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de las citas de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos de la cita seleccionada&nbsp;y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n de la cita del paciente, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="92" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[32]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de las citas de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de citas</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="18" name="Pacientes" >
+<node_order><![CDATA[9]]></node_order>
+<details><![CDATA[<p>Registro de los pacientes</p>
+]]></details> 
+
+<testcase internalid="94" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[33]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;registros de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos del paciente en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los pacientes</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="96" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[34]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Pacientes&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los pacientes</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los pacientes</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="98" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[35]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos del paciente seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del paciente, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="100" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[36]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de pacientes</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="19" name="Condición médica" >
+<node_order><![CDATA[10]]></node_order>
+<details><![CDATA[<p>Registro de las posibles condiciones medicas de los pacientes</p>
+]]></details> 
+
+<testcase internalid="102" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[37]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;registros de las condiciones medicas de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos de las condiciones medicas mas comunes en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de las condiciones medicas</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="104" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de las condiciones medicas de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Condiciones Medicas&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de las condiciones medicas</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan las condiciones medicas</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="106" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de las condiciones medicas de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos de la condici&oacute;n medica seleccionada y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n de la condici&oacute;n medica, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="108" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de las condiciones medicas de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de condiciones medicas</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="20" name="Historia" >
+<node_order><![CDATA[11]]></node_order>
+<details><![CDATA[<p>Registro de historia medica de los pacientes, incluye la enfermedad bucal del paciente, tambien los servicios dentales aplicados y los insumos utilizados</p>
+]]></details> 
+
+<testcase internalid="110" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[41]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;historia medica de los pacientes y enfermedad bucal</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar registro nuevo</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra modal de formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Selecciona la cita del paciente y el odontograma</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra odontograma del paciente</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Llena los datos de enfermedades de los dientes del paciente y presionar el bot&oacute;n de agregar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Se anexan los registros a una&nbsp;tabla de historia medica</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Presionar boton de Guardar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Se guardan las enfermedades aplicadas al odontograma y se cierra modal de formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="112" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver registro de historia medica de los pacientes, presupuesto y precio de tratamientos</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Seleccionar opci&oacute;n de &quot;Odontograma&quot; en el men&uacute;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recarga la pagina, muestra la historia de los pacientes, con el presupuesto y precio de los recibios recibidos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Detallando la interfaz</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Cuenta con la opci&oacute;n de &quot;Tratar&quot; o &quot;Nuevo&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="114" name="Tratar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar servicio dental a las enfermedades bucales de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n de &quot;Tratar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra modal de tratamientos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualizar la lista de enfermedades establecidas y opci&oacute;n para presionar &quot;tratar&quot; a la enfermedad</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Captura los datos de la enfermedad en formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Y en formulario seleccionar servicio y presionar &quot;Aplicar tratamiento&quot;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Se guarda la evoluci&oacute;n del servicio aplicado a la historia del paciente</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="116" name="Usar insumos">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[44]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar o actualizar el uso de los insumos en cada tratamiento aplicado</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>En modal de &quot;Tratar&quot; ya seleccionado</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Se visualiza la lista de tratamientos aplicados</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Bot&oacute;n de &quot;Insumos&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra segundo modal de formularios con detalles de la historia y lista de&nbsp;insumos disponibles&nbsp;&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Seleccionar la cantidad de insumos utilizados en el tratamientos y presionar bot&oacute;n &quot;Descontar insumo&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Descuenta la cantidad en los insumos disponibles y<br />
+Actualiza tabla de la lista de tratamientos aplicados, mostrando los insumos utilizados.&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="21" name="Pagos" >
+<node_order><![CDATA[12]]></node_order>
+<details><![CDATA[<p>Registros de pagos de los tratamientos aplicados a los pacientes</p>
+]]></details> 
+
+<testcase internalid="118" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[45]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;registros de los pagos de los tratamientos de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se selecciona el paciente y el tipo de pago</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Expande el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Se cargar todos los datos del pago y se presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos y cierra el formulario, actualiza la tabla de pagos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="120" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de los pagos de los tratamientos de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Se selecciona en el men&uacute; la opci&oacute;n de &quot;Pagos&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los pagos de los pacientes</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualiza los pagos</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar o Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="122" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[47]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de los pagos de los tratamientos de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n de &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recarga la pagina para modificar el pago seleccionado y muestra el formulario del pago</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza el pago, actualiza los datos necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabal de los pagos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="124" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[48]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de los pagos de los tratamientos de los pacientes</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n de &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado&nbsp;y actualiza la tabla</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="22" name="Reportes" >
+<node_order><![CDATA[13]]></node_order>
+<details><![CDATA[<p>Visualizaci&oacute;n de los reportes en el sistema</p>
+]]></details> 
+
+<testcase internalid="126" name="Sencillos">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[49]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver reportes del sistema en tablas</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Reportes&quot; -&gt; &quot;Sencillos&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de selecci&oacute;n para escoger entre los reportes deseados</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Selecciona el reporte deseado y presiona en buscar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos seleccionados con las opciones de exportar a PDF</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="128" name="Estadisticos">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[50]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Generar graficos de datos con la informaci&oacute;n del sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Reportes&quot; -&gt; &quot;Estadisticos&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra algunos botones para seleccionar el tipo de reporte estadistico deseado</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Selecciona el reporte deseado presionando el bot&oacute;n generar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra una grafica estadisticas con los datos seleccionados</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="23" name="Bitácora" >
+<node_order><![CDATA[14]]></node_order>
+<details><![CDATA[<p>Registros de movimientos de los usuarios en el sistema</p>
+]]></details> 
+
+<testcase internalid="130" name="Consultar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de los movimientos de los usuarios del sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Bit&aacute;cora&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de la bit&aacute;cora, todos los movimientos del sistema</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="24" name="Usuarios" >
+<node_order><![CDATA[15]]></node_order>
+<details><![CDATA[<p>Control de los usuarios del sistema</p>
+]]></details> 
+
+<testcase internalid="132" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;registros de los usuarios del sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos del usuario en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los usuarios</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="134" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[53]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de los usuarios del sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Usuarios&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los usuarios</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los usuarios</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="136" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de los usuarios del sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos del usuario seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del usuario, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="138" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de los usuarios del sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de usuarios</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="25" name="Roles" >
+<node_order><![CDATA[16]]></node_order>
+<details><![CDATA[<p>Registro de roles de los usuarios</p>
+]]></details> 
+
+<testcase internalid="140" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[56]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;registros de los roles&nbsp;de los usuarios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos del&nbsp;rol en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los roles</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="142" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[57]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de los roles&nbsp;de los usuarios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Roles&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los roles</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los roles</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="144" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[58]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de los roles&nbsp;de los usuarios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos del rol seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del rol, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="146" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[59]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de los roles&nbsp;de los usuarios</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de roles</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="26" name="Modulos" >
+<node_order><![CDATA[17]]></node_order>
+<details><![CDATA[<p>Registro de los modulos dentro del sistema</p>
+]]></details> 
+
+<testcase internalid="148" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[60]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;registros de los modulos del&nbsp;sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos del modulo en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los modulos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="150" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[61]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de los modulos del&nbsp;sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Modulos&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los modulos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los modulos</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="152" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[62]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de los modulos del&nbsp;sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos del modulo seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del modulo, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="154" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[63]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de los modulos del&nbsp;sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de modulos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="27" name="Permisos" >
+<node_order><![CDATA[18]]></node_order>
+<details><![CDATA[<p>Registros de Permisos manejados en el sistema</p>
+]]></details> 
+
+<testcase internalid="156" name="Registrar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[64]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Agregar&nbsp;registros de los permisos del&nbsp;sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presionar en bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra el formulario de registro</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Carga los datos del permiso en el formulario y presiona el bot&oacute;n de &quot;Registrar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los permisos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="158" name="Consultar">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[65]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver&nbsp;registros de los permisos del&nbsp;sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Permisos&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra la tabla con los datos de los permisos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Se visualizan los permisos</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra botones para Editar y Eliminar</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="160" name="Modificar">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[66]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Editar y actualizar&nbsp;registros de los permisos del&nbsp;sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Modificar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Recargar la pagina para modificar los datos del permiso seleccionado y muestra el formulario</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la informaci&oacute;n del permiso, actualiza la informaci&oacute;n necesaria y presiona el bot&oacute;n de &quot;Guardar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Actualiza los datos y vuelve a mostrar la tabla actualizada</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="162" name="Eliminar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[67]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Borrar&nbsp;registros de los permisos del&nbsp;sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Presiona el bot&oacute;n &quot;Eliminar&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Muestra alerta para confirmar la acci&oacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Confirma la acci&oacute;n de eliminar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Env&iacute;a la acci&oacute;n de eliminar, borra el registro seleccionado y actualiza la tabla de permisos</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Visualiza la tabla actualizada</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="29" name="Ayuda" >
+<node_order><![CDATA[20]]></node_order>
+<details><![CDATA[<p>Visualizacion de manual de ayuda del sistema</p>
+]]></details> 
+
+<testcase internalid="164" name="Consultar">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[68]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ver Manuel de ayuda del sistema</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecciona en el men&uacute; la opci&oacute;n de &quot;Ayuda&quot; -&gt; &quot;Manual&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Abre nueva pesta&ntilde;a para visualizar Manual de uso del sistema</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="1569" name="Iniciar sesión" >
+<node_order><![CDATA[21]]></node_order>
+<details><![CDATA[<p>Modulo encargado de la autenticaci&oacute;n al sistema, para moverse por el sistema.&nbsp;</p>
+]]></details> 
+
+<testcase internalid="1570" name="Autenticación de usuario">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[69]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ingregar los datos para acceder a la cuenta de usuario del sistema y realizar las operaciones necesario dentro de lo permitido.</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Ver pantalla de inicio de sesi&oacute;n e ingresar los datos solicitados para Iniciar sesi&oacute;n</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Verifica los datos de ingreso para conseguir las cuentas y retorna un mensaje de alerta al ser exitoso</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Visualiza la alerta de exito y presiona bot&oacute;n &quot;Ok&quot;<br />
+&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Redirecciona la pagina a la pantalla de inicio del sistema.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

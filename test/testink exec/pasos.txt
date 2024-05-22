@@ -1,0 +1,45 @@
+Selecciona en el menú la opción de "Reportes" -> "Sencillos"
+Muestra el formulario de selección para escoger entre los reportes deseados
+
+Selecciona el reporte deseado y presiona en buscar
+Muestra la tabla con los datos seleccionados con las opciones de exportar a PDF
+
+
+==================================================================
+REGISTRAR
+Presionar en botón de "Registrar"
+Muestra el formulario de registro
+
+Carga los datos del consultorio en el formulario y presiona el botón de "Registrar"
+Guarda los datos ingresados y cierra el formulario, actualiza la tabla de los consultorios
+
+==================================================================
+
+CONSULTAR
+Selecciona en el menú la opción de "Consultario"
+Muestra la tabla con los datos de los consultorios
+
+Se visualizan los consultorios
+Muestra botones para Editar y Eliminar
+
+==================================================================
+
+MODIFICAR
+Presiona el botón "Modificar"
+Recargar la pagina para modificar los datos del consultorio seleccionado y muestra el formulario
+
+Visualiza la información del consultorio, actualiza la información necesaria y presiona el botón de "Guardar"
+Actualiza los datos y vuelve a mostrar la tabla actualizada
+
+==================================================================
+
+ELIMINAR
+Presiona el botón "Eliminar"
+Muestra alerta para confirmar la acción
+
+Confirma la acción de eliminar
+Envía la acción de eliminar, borra el registro seleccionado y actualiza la tabla de consultorios
+
+Visualiza la tabla actualizada
+
+==================================================================

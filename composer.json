@@ -1,0 +1,8 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "dompdf/dompdf": "^2.0",
+		"php-ds/php-ds": "v1.2.0",
+        "phpunit/phpunit": "^9.6"
+    }
+}

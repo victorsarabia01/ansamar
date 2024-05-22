@@ -1,0 +1,107 @@
+<?php
+	
+	class paciente_model extends conexion {
+		
+		public $CNX;
+		public $consulta;
+		public $descripcion;
+		public $direccion;
+		public $cedula;
+		public $tlfno;
+
+		
+		public function __construct(){
+			try {
+				$this->CNX = parent::conectar();
+			} catch (Exception $e) {
+				die($e->getMessage());
+			}
+		}
+		
+		// FUNCION PARA VERIFICAR SI YA EXISTE UNA CEDULA
+		public function validarCedula($cedula){
+			try {
+				$query="SELECT id as consulta from empleado where cedula=?";
+				$smt = $this->CNX->prepare($query);
+				$smt->execute(array($cedula));
+				return $smt->fetchAll(PDO::FETCH_OBJ);
+			} catch (Exception $e) {
+				die($e->getMessage());
+			}
+		}
+
+		//RESGISTRAR EMPLEADO EN BD
+		public function registrarEmpleado(empleado_model $data){
+			try {
+				$query="INSERT into empleado (cedula,nombres,apellidos,fechaNacimiento,email,tlfno,direccion,status,id_tipo_empleado) values (?,?,?,?,?,?,?,?,?)";
+				$this->CNX->prepare($query)->execute(array($data->cedula,$data->nombres,$data->apellidos,$data->fechaNacimiento,$data->correo,$data->telefono,$data->direccion,'1',$data->tipo_empleado));
+				
+			} catch (Exception $e) {
+				die($e->getMessage());
+			}
+		}
+
+		public function listarPaciente(){
+			try {
+		
+				$query="SELECT * from paciente";
+				$smt = $this->CNX->prepare($query);
+				$smt->execute();
+				return $smt->fetchAll(PDO::FETCH_OBJ);
+			} catch (Exception $e) {
+				die($e->getMessage());
+			}
+		}
+		
+		//ELIMINAR CONSULTORIO DE LA BD
+		public function delete($id){
+			try {
+
+				$query="UPDATE paciente set status='0' WHERE id=?";
+				$smt = $this->CNX->prepare($query);
+				$smt->execute(array($id));
+				return $smt->fetchAll(PDO::FETCH_OBJ);
+
+			} catch (Exception $e) {
+				die($e->getMessage());
+			}
+		}
+
+
+		public function listarTodosTipoEmpleados(){
+			try {
+		
+				$query="SELECT * FROM tipo_empleado";
+				$smt = $this->CNX->prepare($query);
+				$smt->execute();
+				return $smt->fetchAll(PDO::FETCH_OBJ);
+			} catch (Exception $e) {
+				die($e->getMessage());
+			}
+		}
+	
+		// CONSULTAR REGISTRO DE CONSULTORIOS
+		public function cargarConsultorio($id){
+			try {
+				$query="SELECT * FROM consultorio WHERE id=?";
+				$smt = $this->CNX->prepare($query);
+				$smt->execute(array($id));
+				return $smt->fetchAll(PDO::FETCH_OBJ);
+			} catch (Exception $e) {
+				die($e->getMessage());
+			}
+		}
+		
+		//RESGISTRAR CONSULTORIO EN BD
+		public function registrarConsultorio(consultorio_model $data){
+			try {
+				$query="INSERT into consultorio (descripcion,direccion) values (?,?)";
+				$this->CNX->prepare($query)->execute(array($data->descripcion,$data->direccion));
+				
+			} catch (Exception $e) {
+				die($e->getMessage());
+			}
+		}
+
+	} 
+?>

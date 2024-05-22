@@ -1,0 +1,34 @@
+
+
+.bolded {
+  font-weight:bold;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+
+/*.MarkTotal tbody tr:last-child {
+    font-weight: bold !important;
+}
+*/
+td:nth-child(2) {
+  font-weight: bold
+}
+
+.dataTables_length{
+
+
+
+  
+
+;
+   	
+   	/*position: relative;*/
+}
+.dataTables_info{
+	position: absolute;
+    bottom:-10px;
+    left: :15px;
+}

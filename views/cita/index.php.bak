@@ -1,0 +1,186 @@
+<?php
+			include_once 'views/comunes/header.php';
+			//include_once 'view/plantilla.php';
+			
+?>
+  
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+
+    <script type="text/javascript" src="resources/js/Jquery.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+</head>
+<body>
+
+<div class="row justify-content-center">
+<div class="card text-dark bg-light mb-3" style="max-width: 40rem;">
+
+  <div class="card-body">
+
+                        <div class="alert alert-success" role="alert">
+                            <h3>Hola, Agenda tu cita Aqui</h3>
+                            <h6>(solicitud de cita)</h6>
+                        </div>
+                       
+                    <form class="form-horizontal" method="post" action="index.php?c=nuevaCita&a=guarda">
+                        <div class="col-md-8">
+                        <input type="hidden" name="txtID" id="txtID" value="<?php echo $alm->id; ?>">
+                        <input type="hidden" name="cedulaAmigo" id="cedulaAmigo" value="<?php echo $alm->cedula; ?>">
+
+                            <input type="text" class="form-control" name="cedula" id="cedula" onKeyUp= keepNumOrDecimal(this) value="<?php echo $alm->cedula; ?>" aria-describedby="emailHelp" placeholder="Cedula Ejem. 22186490" maxlength="8" required>
+                        </div>
+              
+                        <div class="col-md-8">
+                            <input type="text" id="nombres" name="nombres" class="form-control mayusculas buscar" id="nombres" value="<?php echo $alm->nombres; ?>" aria-describedby="emailHelp" placeholder="Nombres" maxlength="25" required>
+                        </div>
+                         <div class="col-md-8">
+                            <input type="text" name="apellidos" id="apellidos" class="form-control mayusculas buscar" id="nombres" value="<?php echo $alm->apellidos; ?>" aria-describedby="emailHelp" placeholder="Apellidos" maxlength="25" required>
+                        </div>
+
+                        <div class="col-md-8">
+                        
+                            <input type="text" class="form-control" name="telefono" onkeyup= keepNumOrDecimal(this) id="telefono" value="<?php echo $alm->tlfn; ?>" aria-describedby="emailHelp" placeholder="04245208619" maxlength="11" required>
+                        </div>
+
+                        <div class="col-md-8">
+                            
+                            <input type="date" class="form-control" id="fecha" name="fecha" required>
+                        </div>
+                        
+
+                        <div class="col-md-8">
+
+                                <!--<div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">3</label>
+                                </div>-->
+                           
+                           
+                             <select name="consultorio" id="consultorio" class="form-select form-select-lg mb-1" aria-label="Ejemplo de .form-select-lg" required>
+                                <option value="0">Consultorio</option>
+								<?php foreach ($this->mode->listarTodosConsultorios()  as $k) : ?>
+                                    <option value="<?php echo $k->id ?>"> <?php echo $k->descripcion ?></option>
+                                <?php endforeach ?>
+         
+                            </select>
+                            <!--<select name="turno" id="turno" class="form-select form-select-lg mb-1" aria-label="Ejemplo de .form-select-lg" required>
+                               
+
+                            </select>-->
+                            <select name="turno" id="turno" class="form-select form-select-lg mb-1" aria-label="Ejemplo de .form-select-lg" required>
+                                <option value="0">Turno</option>
+                                <option value="1">Mañana</option>
+                                <option value="2">Tarde</option>
+                            </select>
+                    
+                            <select name="doctor" id="doctor" class="form-select form-select-lg mb-1" aria-label="Ejemplo de .form-select-lg" required>
+                              <option value="0">Odontologo</option>
+                              <?php foreach ($this->mode->listarTodosDoctores()  as $k) : ?>
+                                    <option value="<?php echo $k->id ?>"> <?php echo $k->nombres." ".$k->apellidos?></option>
+                                <?php endforeach ?>
+                     
+                            
+                            </select>
+                        </div>
+                        <div id="resultadoBusqueda"></div>
+                        <div id="resultadoBusqueda1"></div>
+                        <br>
+                        <div class="col-md-8">
+                            <div class="g-recaptcha" data-sitekey="6Lcc4xInAAAAAIhChEIZvj71HnTxRnwBqVgK6daJ"></div>
+                        </div>
+
+
+                        <br>
+
+                  
+                            <button type="submit" href="?c=guardar" value="Guardar" name="registrar" id="registrar" class="btn btn-success">Agendar</button>
+                        
+                            <a href="index.php" class="btn btn-block btn-danger">Cancelar</a>
+                     
+                        
+            </form>
+  </div>
+</div>
+</div>
+
+
+
+<script>
+    
+    // Forzar solo números y puntos decimales
+    function keepNumOrDecimal(obj) {
+     // Reemplace todos los no numéricos primero, excepto la suma numérica.
+    obj.value = obj.value.replace(/[^\d.]/g,"");
+     // Debe asegurarse de que el primero sea un número y no.
+    obj.value = obj.value.replace(/^\./g,"");
+     // Garantizar que solo hay uno. No más.
+    obj.value = obj.value.replace(/\.{2,}/g,".");
+     // Garantía. Solo aparece una vez, no más de dos veces
+    obj.value = obj.value.replace(".","$#$").replace(/\./g,"").replace("$#$",".");
+    }
+    </script>
+
+    <script type="text/javascript"> // VALIDAR CAMPOS DE SOLO NUMERO Y LETRAS AL INPUT
+                          //jQuery('.soloNumeros').keypress(function (tecla) {
+                          //if (tecla.charCode < 48 || tecla.charCode > 57) return false;
+                          //});
+                          
+                          $("input.buscar").bind('keypress', function(event) {
+                          var regex = new RegExp("^[a-zA-Z ]+$");
+                          var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+                          if (!regex.test(key)) {
+                          event.preventDefault();
+                          return false;
+                          }
+                          });
+    </script>
+
+<script>
+$(document).ready(function() {
+    $("#resultadoBusqueda").html('<p>Escribir Nº Entrada</p>');
+    //document.getElementById('nombres').value='prueba';
+});
+
+function buscar() {
+    var textoBusqueda = $("input#cedula").val();
+ 
+     if (textoBusqueda != "") {
+        $.post("ajax/buscarPaciente.php", {valorBusqueda: textoBusqueda}, function(mensaje,mensaje1) {
+            $("#resultadoBusqueda").html(mensaje);
+            //$("#resultadoBusqueda1").html(mensaje1);
+            document.getElementById('nombres').value=mensaje;
+            //document.getElementById('apellidos').value=mensaje1;
+            //html(mennsaje1);
+         }); 
+     } else { 
+        $("#resultadoBusqueda").html('<p>Escribir Nº Entrada</p>');
+        };
+        document.getElementById('nombres').value='';
+};
+</script>
+
+
+
+                 
+
+    
+</body>
+
+</html>
+<?php
+include_once 'views/comunes/footer.php';
+?>
