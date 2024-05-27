@@ -1,5 +1,5 @@
 <?php
-	
+	require_once "config/database.php";
 	class conexion_database {
 		
 		public $CNX;

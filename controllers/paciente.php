@@ -54,7 +54,7 @@ include_once "controller.php";
 		public function editar(){
 			if($this->accesoModificar){
 				//$alm = new paciente_model();
-				$this->alm = $this->mode->Consultar("cargarPaciente", $_REQUEST['id']);
+				$this->alm = $this->mode->Consultar("cargarPaciente", base64_decode($_REQUEST['id']) );
 				return $this->vista("paciente/modificar");
 			}else{
 				return $this->vista("error");
@@ -120,7 +120,7 @@ include_once "controller.php";
 
 		public function asignarCondicion(){
 			if($this->accesoRegistrar){
-				$this->alm = $this->mode->Consultar("cargarPaciente", $_REQUEST['id']);
+				$this->alm = $this->mode->Consultar("cargarPaciente",base64_decode($_REQUEST['id']) );
 				return $this->vista("paciente/asignarCondicion");
 			}else{
 				return $this->vista("error");
@@ -130,7 +130,7 @@ include_once "controller.php";
 		public function agendarCita(){
 			if($this->accesoRegistrar){
 				//$alm = new paciente_model();
-				$this->alm = $this->mode->Consultar("cargarPaciente", $_REQUEST['id']);
+				$this->alm = $this->mode->Consultar("cargarPaciente", base64_decode($_REQUEST['id']) );
 				return $this->vista("paciente/asignarCita");
 			}else{
 				return $this->vista("error");

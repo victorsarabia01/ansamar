@@ -56,7 +56,7 @@ include_once "controller.php";
 
 		public function editar(){
 			if($this->accesoModificar){
-				$this->alm = $this->mode->Consultar("cargarInformacionCita", $_REQUEST['id']);
+				$this->alm = $this->mode->Consultar("cargarInformacionCita",base64_decode($_REQUEST['id']) );
 				return $this->vista("cita/modificar");
 			}else{
 				return $this->vista("error");

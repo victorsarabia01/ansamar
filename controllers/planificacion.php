@@ -51,7 +51,7 @@ class PlanificacionController extends controller {
 	public function editar(){
 			
 			if($this->accesoModificar){
-				$this->alm = $this->mode->consultar("cargarPlanificacionAEditar", ($_REQUEST['id']));
+				$this->alm = $this->mode->consultar("cargarPlanificacionAEditar", base64_decode(($_REQUEST['id'])));
 			return $this->vista("planificacion/modificar");
 			}else{
 				return $this->vista("error");

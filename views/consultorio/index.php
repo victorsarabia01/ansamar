@@ -75,8 +75,9 @@
               </div>
               <div class="form-group col-md-6">
               
-              <input type="text" class="form-control" name="telefono" onkeyup= keepNumOrDecimal(this) id="telefono" value="" aria-describedby="emailHelp" placeholder="5208619" maxlength="7" required>
-              </div>
+              <input type="text" class="form-control" name="telefono" onkeyup= keepNumOrDecimal(this);validarTlfno() id="telefono" value="" aria-describedby="emailHelp" placeholder="5208619" maxlength="7" required>
+              <div id="verificarTlfno"></div>  
+            </div>
             </div>
 
             </fieldset>

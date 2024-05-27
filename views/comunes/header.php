@@ -1,5 +1,6 @@
 <?php
 require_once "config/database.php"; //CONEXION A LA DATABASE
+header('Access-Control-Allow-Origin: *');
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -133,8 +133,8 @@ include_once "conexion.php";
 		//RESGISTRAR EMPLEADO EN BD
 		private function registrarPaciente(paciente_model $data){
 			try {
-				$query="INSERT into paciente (cedula,nombres,apellidos,fechaNacimiento,direccion,email,codtlfno,tlfno,sexo,status) values (?,?,?,?,?,?,?,?,?)";
-				$this->CNX->prepare($query)->execute(array($data->cedula,$data->nombres,$data->apellidos,$data->fechaNacimiento,$data->direccion,$data->correo,$data->codtlfn,$data->telefono,$data->sexo,'1'));
+				$query="INSERT into paciente (cedula,nombres,apellidos,fechaNacimiento,direccion,email,password,codtlfno,tlfno,sexo,status) values (?,?,?,?,?,?,?,?,?,?,?)";
+				$this->CNX->prepare($query)->execute(array($data->cedula,$data->nombres,$data->apellidos,$data->fechaNacimiento,$data->direccion,$data->correo,'null',$data->codtlfn,$data->telefono,$data->sexo,'1'));
 				
 			} catch (Exception $e) {
 				die($e->getMessage());

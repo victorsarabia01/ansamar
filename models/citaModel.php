@@ -519,7 +519,7 @@
 		private function listarCitas($id_consultorio){
 			try {
 				$fecha = date('Y-m-d');
-				$query="SELECT c.id,x.descripcion as consultorio, p.cedula, concat (p.nombres,' ',p.apellidos) as paciente,p.tlfno,p.email,t.descripcion AS turno, concat(e.nombres,' ',e.apellidos) as doctor,c.fecha FROM cita as c inner join planificacion as l INNER join paciente as p INNER join turno as t INNER JOIN consultorio as x INNER join empleado as e WHERE c.id_planificacion=l.id and c.id_paciente=p.id and l.id_consultorio=x.id and l.id_turno=t.id and l.id_empleado=e.id";
+				$query="SELECT c.id,x.descripcion as consultorio, p.cedula, concat (p.nombres,' ',p.apellidos) as paciente,p.codtlfno,p.tlfno,p.email,t.descripcion AS turno, concat(e.nombres,' ',e.apellidos) as doctor,c.fecha FROM cita as c inner join planificacion as l INNER join paciente as p INNER join turno as t INNER JOIN consultorio as x INNER join empleado as e WHERE c.id_planificacion=l.id and c.id_paciente=p.id and l.id_consultorio=x.id and l.id_turno=t.id and l.id_empleado=e.id";
 				$smt = $this->CNX->prepare($query);
 				if($id_consultorio!=""){
 					$query .= " and c.id = ".$id_consultorio;

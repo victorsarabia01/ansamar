@@ -55,7 +55,7 @@
 		public function editar(){
 			if($this->accesoModificar){
 				//$this->alm = $this->mode->()cargarEmpleado($_REQUEST['id']);
-				$this->alm = $this->mode->Consultar("cargarEmpleado", ($_REQUEST['id']));
+				$this->alm = $this->mode->Consultar("cargarEmpleado", (base64_decode($_REQUEST['id'])));
 				return $this->vista("empleado/modificar");
 			}else{
 				return $this->vista("error");
@@ -236,6 +236,56 @@
 				return $this->vista("error");
 			}
 		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		public function cargarEmpleados(){
 			if($this->accesoConsultar){

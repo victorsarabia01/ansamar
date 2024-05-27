@@ -22,26 +22,30 @@
               <div class="form-group col-md-6">
                 <input type="hidden" name="id" id="id" value="<?php echo $this->alm->id; ?>">
                 <label for="nombre"><b>Cédula:</b></label>
-                <input type="text" class="form-control" name="cedula" id="cedula" onKeyUp= buscarPaciente();keepNumOrDecimal(this) value="<?php echo $this->alm->cedula; ?>" aria-describedby="emailHelp" placeholder="Cedula Ejem. 22186490" maxlength="9" minlength="7" required>
+                <input type="text" class="form-control" name="cedula" id="cedula" onKeyUp= buscarPaciente();keepNumOrDecimal(this);validarCedula() value="<?php echo $this->alm->cedula; ?>" aria-describedby="emailHelp" placeholder="Cedula Ejem. 22186490" maxlength="9" minlength="7" required>
                 <input type="hidden" id="controlador" name="controlador" value="paciente">
                 <input type="hidden" id="inputVerificarReg" name="inputVerificarReg" value="cedula">
                 <input type="hidden" id="accion" value="index.php?c=paciente&a=modificar">
                 <div id="verificarRegistroPaciente"></div>
+                <div id="verificarCedula"></div>
               </div>
               <div class="form-group col-md-6">
                 <label for="descripcion"><b>Correo:</b></label>
-                <input type="email" class="form-control" name="email" id="email" value="<?php echo $this->alm->email; ?>" aria-describedby="emailHelp" placeholder="example@gmail.com" maxlength="50" required>
+                <input type="email" class="form-control" name="email" id="email" onKeyUp=validarEmail(); value="<?php echo $this->alm->email; ?>" aria-describedby="emailHelp" placeholder="example@gmail.com" maxlength="50" required>
+                <div id="verificarEmail"></div>
               </div>
             </div>
             <!-- COLUMNA -->
             <div class="row">
               <div class="form-group col-md-6">
                 <label for="observaciones"><b>Nombres:</b></label>
-                <input type="text" id="nombres" name="nombres" class="form-control mayusculas buscar" id="nombres" value="<?php echo $this->alm->nombres; ?>" aria-describedby="emailHelp" placeholder="Nombres" maxlength="25" required>
+                <input type="text" id="nombres" name="nombres" onKeyUp=validarNombres(); class="form-control mayusculas buscar" id="nombres" value="<?php echo $this->alm->nombres; ?>" aria-describedby="emailHelp" placeholder="Nombres" maxlength="25" required>
+                <div id="verificarNombres"></div>
               </div>
               <div class="form-group col-md-6">
                 <label for="observaciones"><b>Apellidos:</b></label>
-                <input type="text" name="apellidos" id="apellidos" class="form-control mayusculas buscar" id="nombres" value="<?php echo $this->alm->apellidos; ?>" aria-describedby="emailHelp" placeholder="Apellidos" maxlength="25" required>
+                <input type="text" name="apellidos" id="apellidos" onKeyUp=validarApellidos(); class="form-control mayusculas buscar" id="nombres" value="<?php echo $this->alm->apellidos; ?>" aria-describedby="emailHelp" placeholder="Apellidos" maxlength="25" required>
+                <div id="verificarApellidos"></div>
               </div>
             </div>
 
@@ -62,8 +66,8 @@
               <div class="form-group col-md-3">
                 
                 <br>
-                <input type="text" class="form-control" name="telefono" onkeyup= keepNumOrDecimal(this) id="telefono" value="<?php echo $this->alm->tlfno; ?>" aria-describedby="emailHelp" placeholder="04245208619" maxlength="11" required>
-
+                <input type="text" class="form-control" name="telefono" onkeyup= keepNumOrDecimal(this);validarTlfno() id="telefono" value="<?php echo $this->alm->tlfno; ?>" aria-describedby="emailHelp" placeholder="04245208619" maxlength="11" required>
+                <div id="verificarTlfno"></div>
 
               </div>
 

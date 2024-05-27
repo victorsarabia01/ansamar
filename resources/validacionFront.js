@@ -21,6 +21,96 @@
       btn.disabled = false;
     }
 }*/
+
+function validarNombres() {
+  
+  var nombres = $("#nombres").val();
+  console.log(nombres);
+  longitud = nombres.length;
+  console.log(longitud);
+  if (longitud>3) {
+    //console.log('El correo electrónico es válido');
+    $("#verificarNombres").html(``);
+  } else {
+    //console.log('El correo electrónico no es válido');
+    $("#verificarNombres").html(`<div class='col-md-8'>
+    <p style='color:Red;'> Ingrese un nombre valido </p>
+  </div>`);
+  }
+}
+
+function validarApellidos() {
+  
+  var apellidos = $("#apellidos").val();
+  console.log(apellidos);
+  longitud = apellidos.length;
+  console.log(longitud);
+  if (longitud>3) {
+    //console.log('El correo electrónico es válido');
+    $("#verificarApellidos").html(``);
+  } else {
+    //console.log('El correo electrónico no es válido');
+    $("#verificarApellidos").html(`<div class='col-md-8'>
+    <p style='color:Red;'> Ingrese un apellido valido </p>
+  </div>`);
+  }
+}
+
+function validarEmail() {
+  // Expresión regular para validar el formato del correo electrónico
+  //console.log('El correo electrónico es válido');
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var emailInput = $("#email").val();
+  console.log(emailInput);
+  if (regex.test(emailInput)) {
+    console.log('El correo electrónico es válido');
+    $("#verificarEmail").html(``);
+  } else {
+    console.log('El correo electrónico no es válido');
+    $("#verificarEmail").html(`<div class='col-md-8'>
+    <p style='color:Red;'> Correo no valido </p>
+  </div>`);
+  }
+}
+
+
+
+function validarTlfno() {
+  
+  var tlfno = $("#telefono").val();
+  console.log(tlfno);
+  longitud = tlfno.length;
+  console.log(longitud);
+  if (longitud>6) {
+    //console.log('El correo electrónico es válido');
+    $("#verificarTlfno").html(``);
+  } else {
+    //console.log('El correo electrónico no es válido');
+    $("#verificarTlfno").html(`<div class='col-md-8'>
+    <p style='color:Red;'> Numero no valido </p>
+  </div>`);
+  }
+}
+
+function validarCedula() {
+  const regex = /^[^0]/;
+  
+  var cedula = $("#cedula").val();
+  console.log(cedula);
+  longitud = cedula.length;
+  console.log(longitud);
+  if (longitud>6 && regex.test(cedula)===true) {
+    //console.log('El correo electrónico es válido');
+    $("#verificarCedula").html(``);
+  } else{
+    //console.log('El correo electrónico no es válido');
+    $("#verificarCedula").html(`<div class='col-md-8'>
+    <p style='color:Red;'> Cedula no valida </p>
+  </div>`);
+  }
+
+}
+
 function buscarReg() {
     var buscar = $("#inputVerificarReg").val();
     var textoBusqueda = $(`input#${buscar}`).val();
@@ -416,6 +506,7 @@ $(document).ready(function() {
       {"data": 'turno'},
       {"data": 'cedula'},
       {"data": 'paciente'},
+      {"data": 'codtlfno'},
       {"data": 'tlfno'},
       {"data": 'email'},
       {"data": 'doctor'},
@@ -508,7 +599,8 @@ $(document).ready(function() {
           } else */
 
           if (controlador == 'planificacion' || controlador == 'empleados' || controlador == 'paciente' || controlador == 'pagos' || controlador == 'usuario' || controlador == 'rol' || controlador == 'cita'){
-            location.href =`index.php?c=${controlador}&a=editar&id=${id}${dateTemp}`;
+            var idbase64 = btoa(id);
+            location.href =`index.php?c=${controlador}&a=editar&id=${idbase64}${dateTemp}`;
           }else{
           var id_registro=$("#id").val(data.id),
           descripcion=$("#descripcion").val(data.descripcion),
@@ -528,7 +620,8 @@ $(document).ready(function() {
 
           } if (controlador == 'empleado'){
             $("#codtlfn").val(data.codtlfno);
-            location.href =`index.php?c=${controlador}&a=editar&id=${id}${dateTemp}`;
+            var idbase64 = btoa(id);
+            location.href =`index.php?c=${controlador}&a=editar&id=${idbase64}${dateTemp}`;
             $("#codtlfn").val(data.codtlfno);
           }
                     console.log(id);
@@ -541,6 +634,7 @@ $(document).ready(function() {
           var id = data.id;
           // alert(dateTemp);
           if (controlador == 'pagos'){
+            
             window.open(`index.php?c=pagos&a=reportePDF&tipo=pagosPDF&id=${id}`, '_blank');
           }
           console.log(id);
@@ -551,7 +645,8 @@ $(document).ready(function() {
           var data = table.row($(this).parents("tr")).data();
           //console.log(data);
           var id = data.id;
-          location.href =`index.php?c=${controlador}&a=asignarCondicion&id=${id}`;
+          var idbase64 = btoa(id);
+          location.href =`index.php?c=${controlador}&a=asignarCondicion&id=${idbase64}`;
           console.log(id);
         });
      }
@@ -569,8 +664,8 @@ $(document).ready(function() {
           // anchor.click();
           //window.open(`index.php?c=sendEmail`, '_blank');
 
-          
-          window.open(`index.php?c=citaPdf&a=pdf&id=${id}`, '_blank');
+          var idbase64 = btoa(id);
+          window.open(`index.php?c=citaPdf&a=pdf&id=${idbase64}`, '_blank');
           console.log(id);
         });
      }
@@ -579,7 +674,8 @@ $(document).ready(function() {
           var data = table.row($(this).parents("tr")).data();
           //console.log(data);
           var id = data.id;
-          location.href =`index.php?c=${controlador}&a=agendarCita&id=${id}`;
+          var idbase64 = btoa(id);
+          location.href =`index.php?c=${controlador}&a=agendarCita&id=${idbase64}`;
           console.log(id);
         });
      } 

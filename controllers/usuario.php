@@ -56,7 +56,7 @@
 
 		public function editar(){
 			if($this->accesoModificar){
-				$this->alm = $this->mode->Consultar("cargarUsuario", $_REQUEST['id']);
+				$this->alm = $this->mode->Consultar("cargarUsuario",base64_decode($_REQUEST['id']) );
 				return $this->vista("usuario/modificar");
 			}else{
 				return $this->vista("error");

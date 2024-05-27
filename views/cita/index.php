@@ -205,6 +205,7 @@
               <th>Turno</th>
               <th>Cedula</th>
               <th>Paciente</th>
+              <th></th>
               <th>Telefono</th>
               <th>Correo</th>
               <th>Odontologo</th>

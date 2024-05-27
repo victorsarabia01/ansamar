@@ -3,7 +3,7 @@
 	ini_set('date.timezone', 'america/caracas');
 	require_once "config/config.php";
 	require_once "core/routes.php";
-	require_once "config/database.php"; //CONEXION A LA DATABASE
+	//require_once "config/database.php"; //CONEXION A LA DATABASE
 	$mode = null;
 	// if(true){
 	if(!empty($_SESSION[NAME.'_cuentaActiva']) && $_SESSION[NAME.'_cuentaActiva']==true && !empty($_SESSION[NAME.'_cuenta']) ){

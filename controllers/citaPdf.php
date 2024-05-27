@@ -13,7 +13,7 @@ class citaPdfController{
 			
 		}
 	public function pdf(){
-		$this->alm = $this->mode->Consultar("pdfCita", $_REQUEST['id']);
+		$this->alm = $this->mode->Consultar("pdfCita",base64_decode($_REQUEST['id']) );
 		//$this->alm->nombres='';
 		$html1='
   <body>

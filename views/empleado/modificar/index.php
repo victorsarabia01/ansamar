@@ -25,12 +25,14 @@
               <div class="form-group col-md-6">
                 <input type="hidden" name="id" id="id" value="<?php echo $this->alm->id; ?>">
                 <label for="nombre"><b>Cédula:</b></label>
-                <input type="text" class="form-control" name="cedula" id="cedula" onKeyUp=buscarEmpleado();keepNumOrDecimal(this) value="<?php echo $this->alm->cedula; ?>" aria-describedby="emailHelp" placeholder="Cedula Ejem. 22186490" maxlength="8" required>
+                <input type="text" class="form-control" name="cedula" id="cedula" onKeyUp=buscarEmpleado();keepNumOrDecimal(this);validarCedula() value="<?php echo $this->alm->cedula; ?>" aria-describedby="emailHelp" placeholder="Cedula Ejem. 22186490" maxlength="8" required>
                 <div id="verificarRegistroEmpleado"></div>
+                <div id="verificarCedula"></div>
               </div>
               <div class="form-group col-md-6">
                 <label for="descripcion"><b>Correo:</b></label>
-                <input type="email" class="form-control" name="email" id="email" value="<?php echo $this->alm->email; ?>" aria-describedby="emailHelp" placeholder="example@gmail.com" maxlength="50" required>
+                <input type="email" class="form-control" onKeyUp=validarEmail();  name="email" id="email" value="<?php echo $this->alm->email; ?>" aria-describedby="emailHelp" placeholder="example@gmail.com" maxlength="50" required>
+                <div id="verificarEmail"></div>
               </div>
               <div class="form-group col-md-6">
                 <label for="observaciones"><b>Nombres:</b></label>
@@ -64,6 +66,7 @@
                 <!-- value="<?php echo $this->alm->codtlfno; ?>" -->
                   <select class="form-select" name="codtlfn" id="codtlfn"  class="form-select form-select-lg mb-1" required>
                     <option value="<?php echo $this->alm->codtlfno ?>"><?php echo $this->alm->codtlfno?></option>
+                    <option value="0251">0251</option>
                     <option value="0412">0412</option>
                     <option value="0414">0414</option>
                     <option value="0424">0424</option>
@@ -74,7 +77,8 @@
               
               <div class="form-group col-md-3">
                 
-                <input type="text" class="form-control" name="telefono" onkeyup= keepNumOrDecimal(this) id="telefono" value="<?php echo $this->alm->tlfno; ?>" aria-describedby="emailHelp" placeholder="5208619" maxlength="7" required>
+                <input type="text" class="form-control" name="telefono" onkeyup= keepNumOrDecimal(this);validarTlfno() id="telefono" value="<?php echo $this->alm->tlfno; ?>" aria-describedby="emailHelp" placeholder="5208619" maxlength="7" required>
+                <div id="verificarTlfno"></div>
               </div>
             </div>
             <!-- COLUMNA -->
