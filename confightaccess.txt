@@ -1,0 +1,14 @@
+.htpasswd para la autenticación básica en tu proyecto. Este archivo contendrá los nombres de usuario y las contraseñas cifradas que se utilizarán para autenticar a los usuarios que intenten acceder a áreas restringidas de tu sitio web.
+
+En este tutorial vas a ver cómo proteger los directorios o carpetas de tus páginas web de forma manual a través de los archivos .htaccess y .htpasswd.
+
+
+Qué es .htaccess y htpasswd
+Son dos archivos muy importantes para modificar ciertos aspectos en el servidor. Su contenido es texto plano, así que lo podrás editar desde cualquier programa que permita trabajar con texto plano, como el bloc de notas, gedit, etc. (Word recuerda que no trabaja con texto plano). El archivo .htaccess sirve para proteger carpetas, pero también lo podemos usar para que salgan urls cortas.
+ 
+
+.htacces va a establecer el tipo de permisos necesario y quienes pueden acceder a qué archivos.
+
+ 
+
+.htpasswd va a encargarse de guardar el nombre y contraseña de cada uno.
